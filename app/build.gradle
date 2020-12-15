@@ -1,0 +1,147 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.gksoftwaresolutions.comicviewer"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //definition of versions
+    def ktx_core = '1.3.2'
+    def app_compat = '1.2.0'
+    def material = '1.2.1'
+    def constraint = '2.0.4'
+    def j_unit = '4.13.1'
+    def j_unit_test = '1.1.2'
+    def espresso_core = '3.3.0'
+    def lifecycle_viewModel = '2.2.0'
+    def coroutines = '1.3.9'
+    def coroutines_scopes = '2.2.0'
+    def retrofit = '2.9.0'
+    def okHttp_interceptor = '4.8.0'
+    def rx_android = '2.1.1'
+    def rx_java = '2.2.9'
+    def room = '2.2.5'
+    def dagger = '2.29.1'
+    def map_struct = '1.4.1.Final'
+    def groupie = '2.8.1'
+    def facebook_fresco = '2.3.0'
+    def looping_view_pager = '1.1.4'
+    def glide = '4.11.0'
+    def paging = "2.1.2"
+    def custom_tab_intents = '1.3.0'
+    def sticky_scroll_view = '1.0.2'
+
+    //Common Libraries
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.core:core-ktx:$ktx_core"
+    implementation "androidx.appcompat:appcompat:$app_compat"
+    implementation "com.google.android.material:material:$material"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint"
+    testImplementation "junit:junit:$j_unit"
+    androidTestImplementation "androidx.test.ext:junit:$j_unit_test"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_core"
+
+    //Custom Libraries
+
+    //Architecture components
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_viewModel"
+
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+
+    //Coroutines Lifecycle Scopes
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$coroutines_scopes"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$coroutines_scopes"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit"
+
+    //OkHttp Logging Interceptor
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttp_interceptor"
+
+    //RxJava
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android"
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java"
+
+    //Room persistence
+    implementation "androidx.room:room-rxjava2:$room"
+    implementation "androidx.room:room-runtime:$room"
+    kapt "androidx.room:room-compiler:$room"
+
+    //Kotlin Ext Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room"
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$dagger"
+    kapt "com.google.dagger:dagger-compiler:$dagger"
+
+    //MapStruct
+    implementation "org.mapstruct:mapstruct:$map_struct"
+    kapt "org.mapstruct:mapstruct-processor:$map_struct"
+
+    //Groupie
+    implementation "com.xwray:groupie:$groupie"
+    implementation "com.xwray:groupie-kotlin-android-extensions:$groupie"
+    implementation "com.xwray:groupie-viewbinding:$groupie"
+
+    //Facebook Fresco
+    implementation "com.facebook.fresco:fresco:$facebook_fresco"
+
+    //LoopingViewPager
+    implementation "com.asksira.android:loopingviewpager:$looping_view_pager"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide"
+    kapt "com.github.bumptech.glide:compiler:$glide"
+
+    // Paging
+    implementation "androidx.paging:paging-runtime-ktx:$paging"
+
+    //CustomTabIntent
+    implementation "androidx.browser:browser:$custom_tab_intents"
+
+    //Sticky ScrollView
+    implementation "com.github.amarjain07:StickyScrollView:$sticky_scroll_view"
+}

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Comic Viewer</string>
+    <!--Keys from Marvel-->
+    <string name="private_key">5bd506dff487f8ff10498eb76df7915e6f096c9b</string>
+    <string name="public_key">f99407ffc8f82e99d16d83ab41bf2288</string>
+    <!--Login Activity Resources String-->
+    <string name="text_description_app">App to read and watch comics</string>
+    <string name="text_login">Acceder</string>
+    <string name="text_password">Password</string>
+    <string name="text_username">Username or Email</string>
+    <string name="text_fake_error">Fake error username no match with any user</string>
+
+    <!--Home Activity Resources String-->
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_search">Search</string>
+    <string name="text_home_app_name">Comic Viewer App</string>
+    <string name="text_see_details">See detail</string>
+    <string name="text_see_info">See info</string>
+
+    <!--Detail Activity Resources String-->
+    <string name="text_characters">Characters</string>
+    <string name="text_comics">Comics</string>
+    <string name="text_series">Series</string>
+    <string name="text_events">Events</string>
+    <string name="text_creators">Creators</string>
+    <string name="title_activity_detail">ScrollingActivity</string>
+    <string name="text_add_favorite">Add favorite</string>
+    <string name="text_read_issues_and_comics">Read issues and comics</string>
+    <string name="text_read_related_stories">Read related stories</string>
+    <string name="database_name">marvel_db</string>
+    <string name="text_empty_favorites">You have no items added as favorites</string>
+</resources>

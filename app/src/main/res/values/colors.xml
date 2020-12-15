@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Color template for App-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="colorLightPrimary">#C5CAE9</color>
+    <!--Second Brand Template Color-->
+    <color name="colorSecondary">#FFC107</color>
+    <color name="colorSecondaryDark">#FFA000</color>
+    <color name="colorSecondaryAccent">#FF5252</color>
+    <color name="colorLightSecondary">#FFECB3</color>
+    <!--Color Common Resource-->
+    <color name="colorBlackTransparent">#B5000000</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#D32F2F</color>
+    <color name="redLow">#F44336</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorTextIcons">#9A9A9A</color>
+    <color name="colorText">#212121</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTransparentBlack">#BF000000</color>
+    <color name="colorTransparentLow">#A6000000</color>
+    <color name="colorTransparentSupLow">#83000000</color>
+</resources>
